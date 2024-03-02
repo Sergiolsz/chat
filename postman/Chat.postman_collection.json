@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "4bbcfe27-57b9-4f7d-9b5b-8615404a202e",
+		"name": "Chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24943648"
+	},
+	"item": [
+		{
+			"name": "Contactos",
+			"item": [
+				{
+					"name": "Obtener todos los Contactos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/contacto/listado"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener contacto por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/contacto/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener el Propietario de un Contacto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/contacto/4/propietario"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Contacto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Augusto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/contacto/crear"
+					},
+					"response": []
+				},
+				{
+					"name": "Asignar un Propietario al Contacto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Sergio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/contacto/4/asignar-propietario/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un Contacto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Claudia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/contacto/actualizar/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un Contacto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8081/api/contacto/eliminar/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar el Propietario del Contacto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8081/api/contacto/eliminar-propietario/1/contacto/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Propietarios",
+			"item": [
+				{
+					"name": "Obtener todos los Propietarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/listado"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un Propietario por su ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener los Contactos del Propietario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/1/contactos"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Propietario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Rocío\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/propietario/crear"
+					},
+					"response": []
+				},
+				{
+					"name": "Asignar un Contacto al Propietario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Sergio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/propietario/1/asignar-contacto/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un Propietario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Manuel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/propietario/actualizar/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un Propietario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/eliminar/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un Contacto del Propietario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/eliminar/1/contacto/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar todos los Contactos del Propietario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8081/api/propietario/eliminar/contactos/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mensajes",
+			"item": [
+				{
+					"name": "Obtener todos los Mensajes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/mensajes/listado"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un Mensaje por su ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/mensajes/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todos los Mensajes de un Propietario y un Contacto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/mensajes/propietario/2/contacto/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todos los Mensajes entre 2 Contactos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/api/mensajes/contacto/1/contacto/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un Mensaje",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"remitenteId\" : 2,\r\n    \"destinatarioId\" : 1,\r\n    \"remitente\" : \"Carmen\",\r\n\t\"destinatario\" : \"Sergio\",\r\n    \"texto\" : \"Nos vemos mañana en el gimnasio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/mensajes/enviar"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un Mensaje por su ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"remitenteId\" : 2,\r\n    \"destinatarioId\" : 1,\r\n    \"remitente\" : \"Carmen\",\r\n\t\"destinatario\" : \"Sergio\",\r\n    \"texto\" : \"Nos vemos mañana en el gimnasio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/api/mensajes/eliminar/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
