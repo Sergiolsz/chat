@@ -1,4 +1,4 @@
-package com.fran.entity;
+package com.chat.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

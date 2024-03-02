@@ -1,4 +1,4 @@
-package com.fran.modelos.response;
+package com.chat.modelos.response;
 
 import java.io.Serializable;
 import java.util.Set;

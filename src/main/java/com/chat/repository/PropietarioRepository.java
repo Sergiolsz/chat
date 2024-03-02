@@ -1,6 +1,6 @@
-package com.fran.repository;
+package com.chat.repository;
 
-import com.fran.entity.Propietario;
+import com.chat.entity.Propietario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

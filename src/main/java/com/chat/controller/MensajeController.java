@@ -1,8 +1,8 @@
-package com.fran.controller;
+package com.chat.controller;
 
-import com.fran.modelos.dto.MensajeDTO;
-import com.fran.modelos.request.CrearMensajeRequest;
-import com.fran.service.MensajeService;
+import com.chat.modelos.dto.MensajeDTO;
+import com.chat.service.MensajeService;
+import com.chat.modelos.request.CrearMensajeRequest;
 import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;

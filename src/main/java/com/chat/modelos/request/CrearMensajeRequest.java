@@ -1,4 +1,4 @@
-package com.fran.modelos.request;
+package com.chat.modelos.request;
 
 import java.io.Serializable;
 

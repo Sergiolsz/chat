@@ -1,8 +1,8 @@
-package com.fran.controller;
+package com.chat.controller;
 
-import com.fran.modelos.dto.PropietarioDTO;
-import com.fran.modelos.response.ContactosPropietarioResponse;
-import com.fran.service.PropietarioService;
+import com.chat.modelos.dto.PropietarioDTO;
+import com.chat.modelos.response.ContactosPropietarioResponse;
+import com.chat.service.PropietarioService;
 import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;

@@ -1,4 +1,4 @@
-package com.fran.modelos.dto;
+package com.chat.modelos.dto;
 
 public class ContactoDTO {
 

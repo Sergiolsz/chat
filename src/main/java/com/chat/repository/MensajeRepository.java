@@ -1,6 +1,6 @@
-package com.fran.repository;
+package com.chat.repository;
 
-import com.fran.entity.Mensaje;
+import com.chat.entity.Mensaje;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;

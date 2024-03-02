@@ -1,4 +1,4 @@
-package com.fran.modelos.dto;
+package com.chat.modelos.dto;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -88,6 +88,7 @@ public class MensajeDTO {
 	}
 
 	public String getFechaHoraFormateada() {
+
 		if (fechaHora != null) {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 			return fechaHora.format(formatter);

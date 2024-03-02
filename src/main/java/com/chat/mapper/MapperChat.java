@@ -1,11 +1,11 @@
-package com.fran.mapper;
+package com.chat.mapper;
 
-import com.fran.modelos.dto.ContactoDTO;
-import com.fran.modelos.dto.MensajeDTO;
-import com.fran.modelos.dto.PropietarioDTO;
-import com.fran.entity.Contacto;
-import com.fran.entity.Mensaje;
-import com.fran.entity.Propietario;
+import com.chat.entity.Contacto;
+import com.chat.entity.Mensaje;
+import com.chat.entity.Propietario;
+import com.chat.modelos.dto.ContactoDTO;
+import com.chat.modelos.dto.MensajeDTO;
+import com.chat.modelos.dto.PropietarioDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.fran.config;
+package com.chat.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

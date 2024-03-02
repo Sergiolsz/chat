@@ -1,13 +1,13 @@
-package com.fran.service;
+package com.chat.service;
 
-import com.fran.entity.Contacto;
-import com.fran.entity.Propietario;
-import com.fran.exception.ChatException;
-import com.fran.mapper.MapperChat;
-import com.fran.modelos.dto.PropietarioDTO;
-import com.fran.modelos.response.ContactosPropietarioResponse;
-import com.fran.repository.ContactoRepository;
-import com.fran.repository.PropietarioRepository;
+import com.chat.entity.Contacto;
+import com.chat.entity.Propietario;
+import com.chat.exception.ChatException;
+import com.chat.mapper.MapperChat;
+import com.chat.modelos.dto.PropietarioDTO;
+import com.chat.modelos.response.ContactosPropietarioResponse;
+import com.chat.repository.ContactoRepository;
+import com.chat.repository.PropietarioRepository;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
